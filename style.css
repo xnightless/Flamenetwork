@@ -1,38 +1,6 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-.background-orange {
-  background-color: orange;
-  height: 100vh; /* Set the height of the orange background */
-  position: relative;
-}
-.flame-network {
-  background-image: url('flame-network.png'); /* Add the image source */
-  width: 200px; /* Set the width of the flame network */
-  height: 200px; /* Set the height of the flame network */
-  position: absolute; /* Position in the middle of the orange background */
-  top: 50%; /* Position in the middle of the orange background */
-  left: 50%; /* Position in the middle of the orange background */
-  transform: translate(-50%, -50%); /* Center the flame network */
-}
-.search-bar {
-  position: absolute; /* Position below the flame network */
-  top: 50%; /* Position below the flame network */
-  left: 50%; /* Position below the flame network */
-  transform: translate(-50%, 0); /* Center the search bar horizontally */
-}
-.search-bar input {
-  width: 200px; /* Set the width of the search bar */
-  padding: 10px; /* Add padding to the search bar */
-  font-size: 16px; /* Set the font size of the search bar text */
-}
-.nav-bar {
-  position: absolute; /* Position at the top of the orange background */
-  top: 0; /* Position at the top of the orange background */
-  width: 100%; /* Set the width to span the orange background */
-  padding: 10px; /* Add padding to the navigation bar */
-  background-color: white; /* Set the background color of the navigation bar */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a box shadow for depth */
+  background-color: darkorange;
+  background-image: url('flames-pattern.png');
+  background-repeat: repeat;
+  background-attachment: fixed;
 }
