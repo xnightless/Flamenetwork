@@ -1,1 +1,19 @@
+/* style.css */
+body {
+  background-color: #000;
+  color: #FF4500;
+  font-family: Arial, sans-serif;
+}
+.flame {
+  animation: flicker 1s infinite alternate;
+}
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+
 
