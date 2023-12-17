@@ -39,4 +39,4 @@
 
 
 ## Join our Discord!
-[Flame Network]https://discord.gg/TxA5Y7mM
+[Flame Network](https://discord.gg/TxA5Y7mM)
