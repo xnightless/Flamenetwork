@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: darkorange; /* Set the background color to dark orange */
+  background-color: fire; /* Set the background color to dark orange */
   background-image: url('flame-network.png'); /* Set the background image to flame network */
   background-repeat: repeat; /* Repeat the background image to cover the entire page */
   height: 100vh; /* Set the height of the flame background */
