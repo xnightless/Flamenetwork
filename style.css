@@ -107,7 +107,7 @@ a {
   flex: 1;
   position: relative;
   top: -10%;
-  animation: snowflakes-fall 15s linear, Fire-storm 5s ease-in-out;
+  animation: Embers 15s linear, Embers 5s ease-in-out;
   animation-delay: var(--d);
   animation-iteration-count: infinite;
   width:10%;
@@ -115,13 +115,13 @@ a {
   color:white;
 }
 
-@keyframes Firestorm-fall {
+@keyframes Embers-fall {
   100% {
     top: 100%;
   }
 }
 
-@keyframes Firestorm-fall {
+@keyframes Embers-fall {
   50% {
     transform: translateX(100px) rotate(5deg);
   }
