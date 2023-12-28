@@ -111,17 +111,23 @@ height:10%;
 color:white;
 }
 
-@keyframes flame {
-  0% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0;
-    transform: scale(1.5);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
+   @keyframes ember-fall {
+      from {
+        transform: translateY(-100%);
+        opacity: 1;
+      }
+      to {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Your existing HTML content here -->
+  <div class="ember" style="--d:0s"></div>
+  <div class="ember" style="--d:2s"></div>
+  <div class="ember" style="--d:4s"></div>
+  <!-- Add more ember particles as needed -->
+</body>
+</html>
