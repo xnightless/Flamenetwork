@@ -96,22 +96,22 @@
       color: var(--secondary-color);
     }
 
-    .flame-particles {
+    .ember-particles {
       position: absolute;
       width: 10px;
       height: 10px;
       background-color: #ff8c00;
       border-radius: 50%;
-      animation: flame 3s infinite;
+      animation: ember-fall 3s infinite;
       z-index: 9999;
       pointer-events: none;
     }
 
-    .flame-particle {
+    .ember-particle {
       flex: 1;
       position: relative;
       top: -10%;
-      animation: flame-fall 15s linear, flame-fall 5s ease-in-out;
+      animation: ember-fall 15s linear, ember-fall 5s ease-in-out;
       animation-delay: var(--d);
       animation-iteration-count: infinite;
       width: 10%;
@@ -119,7 +119,7 @@
       color: white;
     }
 
-    @keyframes flame-fall {
+    @keyframes ember-fall {
       from {
         transform: translateY(-100%);
         opacity: 1;
@@ -134,11 +134,11 @@
 <body>
   <!-- Your existing HTML content here -->
 
-  <!-- Add flame particles -->
-  <div class="flame-particle" style="--d:0s"></div>
-  <div class="flame-particle" style="--d:2s"></div>
-  <div class="flame-particle" style="--d:4s"></div>
-  <!-- Add more flame particles as needed -->
+  <!-- Add ember particles -->
+  <div class="ember-particle" style="--d:0s"></div>
+  <div class="ember-particle" style="--d:2s"></div>
+  <div class="ember-particle" style="--d:4s"></div>
+  <!-- Add more ember particles as needed -->
 
 </body>
 </html>
