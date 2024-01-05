@@ -1,117 +1,125 @@
-body{
-background-color:black;
-overflow:none;
-}
-ul.navbar {
-list-style-type: none;
-margin: 0;
-z-index:2;
-padding: 0;
-overflow: hidden;
-background-color: #333;
-position:absolute;
-width:100%;
-top:0px;
-left:0px;
-}
+
+    body {
+      background-color: black;
+      overflow: none;
+      margin: 0;
+    }
+
+    ul.navbar {
+      list-style-type: none;
+      margin: 0;
+      z-index: 2;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
 
     li.nav-item {
-        float: left;
-        cursor: pointer !important;
+      float: left;
+      cursor: pointer !important;
     }
+
     li.nav-item a {
-        display: block;
-        color: orange;
-        transition: all 1s;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
+      display: block;
+      color: orange;
+      transition: all 1s;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
     }
+
     li.nav-item a:hover {
-        background-color: #444;
+      background-color: #444;
     }
-  #frame{
-    border:0px solid black;
-    position:absolute;
-    width:100%;
-    z-index:1;
-    height:100%;
-    bottom:0px;
-    left:0px;
-  }
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
-:root {
---primary-color: orange;
---secondary-color: #c4c4c4;
---background-color: #0f0f0f;
-}
-#title{
-width:100%;
-position:absolute;
-bottom:60%;
-left:0px;
-text-align:center;
-color:var(--primary-color);
-text-Flame Network: 3px 6px 2px var(--secondary-color);
-}
+    #frame {
+      border: 0 solid black;
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+      height: 100%;
+      bottom: 0;
+      left: 0;
+    }
 
-#searchbar{
-width: 70%;
-position: absolute;
-bottom: 45%;
-left: 15%;
-padding-top:10px;
-padding-bottom:10px;
-border-radius: 25px;
-background: transparent;
-border: 2px solid black;
-text-align: center;
-color:var(--primary-color);
-border:3px solid var(--primary-color);
-}
-#searchbar::placeholder{
-color:var(--primary-color);
-}
-body {
-background-color: var(--background-color);
-font-family: "Inter", sans-serif;
-}
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
 
-h1, h2, h3 {
-color: var(--primary-color);
-}
+    :root {
+      --primary-color: orange;
+      --secondary-color: #c4c4c4;
+      --background-color: #0f0f0f;
+    }
 
-a {
-color: var(--secondary-color);
-}
+    #title {
+      width: 100%;
+      position: absolute;
+      bottom: 60%;
+      left: 0;
+      text-align: center;
+      color: var(--primary-color);
+      text-shadow: 3px 6px 2px var(--secondary-color);
+    }
 
-.particles {
-position: absolute;
-  width: 10px;
-  height: 10px;
-  background-color: #ff8c00;
-  border-radius: 50%;
-  animation: flame 3s infinite;
+    #searchbar {
+      width: 70%;
+      position: absolute;
+      bottom: 45%;
+      left: 15%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 25px;
+      background: transparent;
+      border: 2px solid black;
+      text-align: center;
+      color: var(--primary-color);
+      border: 3px solid var(--primary-color);
+    }
 
+    #searchbar::placeholder {
+      color: var(--primary-color);
+    }
 
-z-index: 9999;
-pointer-events:none;
-}
+    body {
+      background-color: var(--background-color);
+      font-family: "Inter", sans-serif;
+    }
 
-.particle {
-flex: 1;
-position: relative;
-top: -10%;
-animation: Embers 15s linear, Embers 5s ease-in-out;
-animation-delay: var(--d);
-animation-iteration-count: infinite;
-width:10%;
-height:10%;
-color:white;
-}
+    h1, h2, h3 {
+      color: var(--primary-color);
+    }
 
-   @keyframes ember-fall {
+    a {
+      color: var(--secondary-color);
+    }
+
+    .flame-particles {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #ff8c00;
+      border-radius: 50%;
+      animation: flame 3s infinite;
+      z-index: 9999;
+      pointer-events: none;
+    }
+
+    .flame-particle {
+      flex: 1;
+      position: relative;
+      top: -10%;
+      animation: flame-fall 15s linear, flame-fall 5s ease-in-out;
+      animation-delay: var(--d);
+      animation-iteration-count: infinite;
+      width: 10%;
+      height: 10%;
+      color: white;
+    }
+
+    @keyframes flame-fall {
       from {
         transform: translateY(-100%);
         opacity: 1;
@@ -125,9 +133,13 @@ color:white;
 </head>
 <body>
   <!-- Your existing HTML content here -->
-  <div class="ember" style="--d:0s"></div>
-  <div class="ember" style="--d:2s"></div>
-  <div class="ember" style="--d:4s"></div>
-  <!-- Add more ember particles as needed -->
+
+  <!-- Add flame particles -->
+  <div class="flame-particle" style="--d:0s"></div>
+  <div class="flame-particle" style="--d:2s"></div>
+  <div class="flame-particle" style="--d:4s"></div>
+  <!-- Add more flame particles as needed -->
+
 </body>
 </html>
+
