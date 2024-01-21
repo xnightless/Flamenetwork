@@ -1,145 +1,96 @@
+body {
+  background-color: #0d0d0d;
+  color: white;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
 
-    body {
-      background-color: black;
-      overflow: none;
-      margin: 0;
-    }
+nav {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
 
-    ul.navbar {
-      list-style-type: none;
-      margin: 0;
-      z-index: 2;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333;
-      position: absolute;
-      width: 100%;
-      top: 0;
-      left: 0;
-    }
+nav a {
+  text-decoration: none; /* Remove underline */
+  color: #e4dfdf; /* Set link color */
+  padding: 5px 10px; /* Add padding for better spacing */
+}
 
-    li.nav-item {
-      float: left;
-      cursor: pointer !important;
-    }
+main {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-    li.nav-item a {
-      display: block;
-      color: orange;
-      transition: all 1s;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
+#content-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
 
-    li.nav-item a:hover {
-      background-color: #444;
-    }
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
 
-    #frame {
-      border: 0 solid black;
-      position: absolute;
-      width: 100%;
-      z-index: 1;
-      height: 100%;
-      bottom: 0;
-      left: 0;
-    }
+.title,
+.description {
+  text-align: center;
+}
 
-    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
 
-    :root {
-      --primary-color: orange;
-      --secondary-color: #c4c4c4;
-      --background-color: #0f0f0f;
-    }
+section {
+  background-color: #121212;
+  padding: 20px;
+  display: none;
+  width: 80%; /* Adjust width as needed */
+  margin-bottom: 20px;
+}
 
-    #title {
-      width: 100%;
-      position: absolute;
-      bottom: 60%;
-      left: 0;
-      text-align: center;
-      color: var(--primary-color);
-      text-shadow: 3px 6px 2px var(--secondary-color);
-    }
+.project-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
-    #searchbar {
-      width: 70%;
-      position: absolute;
-      bottom: 45%;
-      left: 15%;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      border-radius: 25px;
-      background: transparent;
-      border: 2px solid black;
-      text-align: center;
-      color: var(--primary-color);
-      border: 3px solid var(--primary-color);
-    }
+.project-image {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    margin-bottom: 10px; /* Add some spacing between the image and project info */
+}
 
-    #searchbar::placeholder {
-      color: var(--primary-color);
-    }
+.project-link {
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Use the default color for links */
+}
 
-    body {
-      background-color: var(--background-color);
-      font-family: "Inter", sans-serif;
-    }
 
-    h1, h2, h3 {
-      color: var(--primary-color);
-    }
-
-    a {
-      color: var(--secondary-color);
-    }
-
-    .ember-particles {
-      position: absolute;
-      width: 10px;
-      height: 10px;
-      background-color: #ff8c00;
-      border-radius: 50%;
-      animation: ember-fall 3s infinite;
-      z-index: 9999;
-      pointer-events: none;
-    }
-
-    .ember-particle {
-      flex: 1;
-      position: relative;
-      top: -10%;
-      animation: ember-fall 15s linear, ember-fall 5s ease-in-out;
-      animation-delay: var(--d);
-      animation-iteration-count: infinite;
-      width: 10%;
-      height: 10%;
-      color: white;
-    }
-
-    @keyframes ember-fall {
-      from {
-        transform: translateY(-100%);
-        opacity: 1;
-      }
-      to {
-        transform: translateY(100%);
-        opacity: 0;
-      }
-    }
-  </style>
-</head>
-<body>
-  <!-- Your existing HTML content here -->
-
-  <!-- Add ember particles -->
-  <div class="ember-particle" style="--d:0s"></div>
-  <div class="ember-particle" style="--d:2s"></div>
-  <div class="ember-particle" style="--d:4s"></div>
-  <!-- Add more ember particles as needed -->
-
-</body>
-</html>
-
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+td { 
+padding-right: 20px; /* Adjust the spacing between columns */ 
+}
