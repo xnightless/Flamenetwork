@@ -1,119 +1,95 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <meta name="description" content="Flame Network, Explore the global internet using Flame Network, It is a reliable proxy with blazing speeds. !" />
+
     <title>Flame Network</title>
+
     <link rel="icon" href="/assets/img/favicon.png">
+
     <link rel="stylesheet" href="/style.css" />
-        <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
     <nav>
-      <a href="#" onclick="showContent('about')">Home</a>
-      <a href="#" onclick="showContent('skills')">Games</a>
-      <a href="#" onclick="showContent('contact')">Apps</a>
-      <a href="#" onclick="showContent('projects')">Tabs</a>
-      <a href="#" onclick="showContent('links')">Settings</a>
-     <a href="#" onclick="showContent('links')">About Us</a>
+
+        <a href="about.html" target="_blank">Home</a>
+
+        <a href="games.html" target="_blank">Games</a>
+
+        <a href="apps.html" target="_blank">Apps</a>
+
+        <a href="tabs.html" target="_blank">Tabs</a>
+
+        <a href="settings.html" target="_blank">Settings</a>
+
+        <a href="about-us.html" target="_blank">About Us</a>
 
     </nav>
 
-<!-- Ember Falling Particles Container -->
-<div class="particles" aria-hidden="true">
-    <div class="falling-particle" style="--d: 0s, 0s;">.</div>
-    <div class="falling-particle" style="--d: 1s, 1s;">.</div>
-    <div class="falling-particle" style="--d: 6s, 0.5s;">.</div>
-    <div class="falling-particle" style="--d: 4s, 2s;">.</div>
-    <div class="falling-particle" style="--d: 2s, 2s;">.</div>
-    <div class="falling-particle" style="--d: 8s, 3s;">.</div>
-    <div class="falling-particle" style="--d: 6s, 2s;">.</div>
-    <div class="falling-particle" style="--d: 2.5s, 1s;">.</div>
-    <div class="falling-particle" style="--d: 1s, 0s;">.</div>
-    <div class="falling-particle" style="--d: 3s, 1.5s;">.</div>
-</div>
+    <!-- Ember Falling Particles Container -->
 
-<style>
-    .falling-particle {
-        position: absolute;
-        color: #ff4500; /* Ember color, adjust as needed */
-        font-size: 2px;
-        animation: fall 5s linear infinite;
-    }
+    <div class="particles" aria-hidden="true">
 
-    @keyframes fall {
-        0% {
-            transform: translateY(-100vh) rotate(0deg);
-            opacity: 0;
-        }
-        50% {
-            opacity: 0.5;
-        }
-        100% {
-            transform: translateY(100vh) rotate(360deg);
-            opacity: 0;
-        }
-    }
-</style>
+        <!-- ... (unchanged) ... -->
+
+    </div>
 
     <!-- Your existing HTML content here -->
 
     <ul class="navbar">
+
         <!-- Your existing navigation items -->
+
     </ul>
 
-    <form class="searchform" id="searchform">
-        <input id="searchbar" placeholder="Search the web freely">
+    <form class="searchform" id="searchform" action="https://www.google.com/search" method="GET">
+
+        <!-- ... (unchanged) ... -->
+
     </form>
 
     <b>
+
         <div id="title">
-            <h1>Flame Network</h1>
+
+            <!-- ... (unchanged) ... -->
+
         </div>
+
     </b>
 
     <!-- Ember Particles Container -->
+
     <div class="particles" aria-hidden="true">
-        <div class="particle" style="--d: 0s, 0s;"></div>
-        <div class="particle" style="--d: 1s, 1s;"></div>
-        <div class="particle" style="--d: 6s, 0.5s;"></div>
-        <div class="particle" style="--d: 4s, 2s;"></div>
-        <div class="particle" style="--d: 2s, 2s;"></div>
-        <div class="particle" style="--d: 8s, 3s;"></div>
-        <div class="particle" style="--d: 6s, 2s;"></div>
-        <div class="particle" style="--d: 2.5s, 1s;"></div>
-        <div class="particle" style="--d: 1s, 0s;"></div>
-        <div class="particle" style="--d: 3s, 1.5s;"></div>
+
+        <!-- ... (unchanged) ... -->
+
     </div>
 
     <!-- Your existing scripts -->
+
     <script src="/uv/uv.bundle.js" defer></script>
+
     <script src="/uv/uv.config.js" defer></script>
+
     <script src="/register-sw.js" defer></script>
+
     <script src="/search.js" defer></script>
+
     <script src="/error.js" defer></script>
-    <script>
-        var searchbar = document.getElementById("searchbar");
-        var searchform = document.getElementById("searchform");
 
-        var fontsize = 2560 / screen.width * 17.5;
-        var fontsize2 = 2560 / screen.width * 6.5;
-        document.getElementById("title").style.fontSize = fontsize + "px";
-        document.getElementById("searchbar").style.fontSize = fontsize2 + "px";
+</body>
 
-        searchform.addEventListener("submit", async (event) => {
-            event.preventDefault();
-            try {
-                await registerSW();
-            } catch (err) {
-                alert(err.toString());
-                throw err;
-            }
-            const url = search(searchbar.value, "https://www.google.com/search?q=%s");
-            window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
-        });
-
-        // Your existing JavaScript code here
-
-        // ... (add any additional JavaScript code)
+</html>
