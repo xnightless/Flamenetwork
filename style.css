@@ -1,96 +1,165 @@
-body {
-  background-color: #0d0d0d;
-  color: white;
-  padding: 0;
+body, h1, h2, h3, p, ul, li {
+
   margin: 0;
+
+  padding: 0;
+
+}
+
+body {
+
+  background-color: #0d0d0d;
+
+  color: white;
+
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
   box-sizing: border-box;
+
   display: flex;
+
   flex-direction: column;
+
   min-height: 100vh;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
 }
 
 nav {
+
   background-color: #333;
+
   padding: 10px;
+
   display: flex;
+
   justify-content: space-around;
+
 }
 
 nav a {
-  text-decoration: none; /* Remove underline */
-  color: #e4dfdf; /* Set link color */
-  padding: 5px 10px; /* Add padding for better spacing */
+
+  text-decoration: none;
+
+  color: #e4dfdf;
+
+  padding: 5px 10px;
+
 }
 
 main {
+
   min-height: 100vh;
+
   padding: 4rem 2rem;
+
   flex: 1;
+
   display: flex;
+
   flex-direction: column;
+
   justify-content: center;
+
   align-items: center;
+
 }
 
 #content-container {
+
   flex-grow: 1;
+
   display: flex;
+
   justify-content: center;
+
   align-items: center;
+
   padding: 20px;
+
 }
 
 .title {
+
   margin: 0;
+
   line-height: 1.15;
+
   font-size: 4rem;
+
 }
 
-.title,
-.description {
+.title, .description {
+
   text-align: center;
+
 }
 
 .description {
+
   margin: 4rem 0;
+
   line-height: 1.5;
+
   font-size: 1.5rem;
+
 }
 
 section {
+
   background-color: #121212;
+
   padding: 20px;
+
   display: none;
-  width: 80%; /* Adjust width as needed */
+
+  width: 80%;
+
   margin-bottom: 20px;
+
 }
 
 .project-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+
 }
 
 .project-image {
-    max-width: 100%; /* Ensure the image doesn't exceed its container */
-    margin-bottom: 10px; /* Add some spacing between the image and project info */
+
+  max-width: 100%;
+
+  margin-bottom: 10px;
+
 }
 
 .project-link {
-    text-decoration: none; /* Remove underline from the link */
-    color: inherit; /* Use the default color for links */
-}
 
+  text-decoration: none;
+
+  color: inherit;
+
+}
 
 footer {
+
   background-color: #333;
+
   color: #fff;
+
   padding: 10px;
+
   text-align: center;
+
 }
-td { 
-padding-right: 20px; /* Adjust the spacing between columns */ 
+
+td {
+
+  padding-right: 20px;
+
 }
